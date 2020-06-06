@@ -1,54 +1,139 @@
-<!-- index.html -->
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>Grid Example</title>
-        <link rel="stylesheet" href="../css/style.css">
-    </head>
-    <article>
-        <a href="#">Home</a>
-    </li>
-    <li>
-      <a href="#">Blog</a>
-    </li>
-    <li>
-      <a href="#">About</a>
-    </li>
-  </ul>
-</nav>
-</header>
+<html lang="en">
 
-<main>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jason Orabella</title>
+  <link rel="stylesheet" href="Framework.css">
+</head>
 
-<article>
-  <h2>Article Title</h2>
+<body>
+  <div class="wrapper">
+    <header class="main-header">
+      <h1 id="TopNav" class="main-header__title">Jason Orabella</h1>
+      <nav class="navigation">
+        <ul class="navigation__list">
+          <li class="navigation__list-item"><a href="#About-Me">About Me</a></li>
+          <li class="navigation__list-item"><a href="#Projects">Projects</a></li>
+          <li class="navigation__list-item"><a href="#Contact">Contact Info</a></li>
+        </ul>
+      </nav>
+    </header>
 
-  <div class="authorContainer">
-    <img src="jason picture.com" alt="jason picture">
-    <h3>Author</h3>
-  </div>
-  
-  <h4> </h4>
+    <main>
+      <article class="personal-info">
+        <div class="personal-info-grid">
+          <div class="personal-info__content-container">
+            <figure class="personal-info__image-container" id="About-Me">
+              <img class="personal-info__headshot" src="AuthorPic.png" alt="AuthorImage>
+              <!-- <figcaption class="personal-info__headshot-caption">Jason Orabella</figcaption> -->
+            </figure>
+            <div class="personal-info__content">
+              <h3 class="personal-info__content-title">Skills</h3>
+              <p>
+                Java • HTML • CSS • Flexbox • Grid • TDD •  
+                Object Oriented Programming (OOP) 
+              </p>
+            </div>
+            <div class="personal-info__content">
+              <h3 class="personal-info__content-title">Tools</h3>
+              <p>
+                Git • Gradle • Visual Studio Code • Intellij
+              </p>
+            </div>
+          </div>
 
-  <p>My name is Jason Orabella. I am currently in a bootcamp to learn 
-      I got my degree in Fisheries science from The Ohio State University
-    I chose that degree because of...
-  </p>
-        
-        <h4>Month 01, 2017</h4>
-    <body>
-        <div class="container">
-            <section class="grid-item grid-item-1">Skills</section>
-            <section class="grid-item grid-item-2">CSS</section>
-            <section class="grid-item grid-item-3">Java</section>
-            <section class="grid-item grid-item-4">HTML</section>
-            <section class="grid-item grid-item-5">FlexBox</section>
-    </div>
+          <div class="personal-info__content">
+            <h3 class="personal-info__content-title">History</h3>
+            <p>I am currently in a bootcamp to learn programming. I grew up outside Cincinatti, Ohio.
+                Ive always had a passion for science and learning.
+                I got my degree in Fisheries science from The Ohio State University. 
+                I chose that degree because of my longstanding hobby of keeping aquariums. 
+                Upon entering the workforce after Univirsity, I found myself in logistics. I found that automating 
+                some simple tasks made my job much easier and enjoyable. 
+             
+            </p>
+            <p>
+            </p>
+            <p>
+            </p>
+          </div>
 
-            <!-- All of your code goes here -->
         </div>
-    </body>
-</html>
+      </article>
 
-    
+      <article class="button-container">
+        <button class="back-to-top-button"><a href="#TopNav">Back To Top</a></button>
+      </article>
+
+      <hr>
+
+      <article class="projects">
+        <h2 id="Projects">Projects</h2>
+        <ul class="projects__list">
+
+          <li class="projects__list-item">
+            <a class="projects__list-link" href="https://github.com/BrianBross/virtual-pets-amok-team-dragon.git"
+              target="_blank">VituralPetsAmok Repository</a>
+            <p>In this project, we developed a console application that would allow the user to create and interact
+              with both Organic and Robotic Dragons that can either Breath Fire or Blow Bitter Wind. These dragons
+              are housed in a virtual cave that would have ash build up from the fire breathing dragons and icicles from
+              the
+              icy dragons. However, the fire breathing dragons would melt the icicles while the bitter wind from the icy
+              dragons would clear out some of the ashes. Future iterations of this application will allow the user to
+              return to their previously saved state upon loading the application, and managing multiple dragon caves
+              to illicit inter-dragon activities.
+            </p>
+            <figure class="projects__image-container">
+              <img class="projects__image-item" src="./images/VirtualPetScreenShot.PNG"
+                alt="Screen Shot of Virtual Pet App">
+              <figcaption class="projects__image-caption">Screen Shot of Virtual Pet App</figcaption>
+            </figure>
+          </li>
+
+          <li class="projects__list-item">
+            <a class="projects__list-link" href="https://github.com/BrianBross/university-clinic-hospital-bee-squad.git"
+              target="_blank">UniversityClinic Repository</a>
+            <p>In this project, we were tasked to develop a console application that would allow a user to
+              enter data for an Employee Roster to keep track of the staff of a clinic. We also added the features
+              of entering additional patients (default starting with 3 patients), sending Doctors and Nurses on
+              their rounds having a direct effect on the patients' health levels. Future iterations of this application
+              will include a time feature that will effect the patient's health levels, and will allow the user to send
+              janitors on their rounds to maintain the hospital's cleanliness.
+            </p>
+            <figure class="projects__image-container">
+              <img class="projects__image-item" src="./images/ClinicHospitalScreenShot.PNG"
+                alt="Screen Shot of Clinic Hospital App">
+              <figcaption class="projects__image-caption">Screen Shot of Clinic Hospital App</figcaption>
+            </figure>
+          </li>
+          
+        </ul>
+      </article>
+      <article class="button-container">
+        <button class="back-to-top-button"><a href="#TopNav">Back To Top</a></button>
+      </article>
+      <hr>
+
+      <article class="contact-me">
+        <h2 id="Contact">Contact Me</h2>
+        <ul class="contact-me__list">
+          <li class="contact-me__list-item"><a href="mailto:brian.bross@gmail.com">
+              <img class="contact-me__list-item-image" src="./images/gmailicon.png" alt="GMail Logo"></a></li>
+          <li class="contact-me__list-item"><a href="https://www.linkedin.com/in/Brian-Bross" target="_blank">
+              <img class="contact-me__list-item-image" src="./images/linkedinicon.png" alt="LinkedIn Logo"></a></li>
+          <li class="contact-me__list-item"><a href="https://www.github.com/BrianBross" target="_blank">
+              <img class="contact-me__list-item-image" src="./images/githubicon.png" alt="GitHub Logo"></a></li>
+    </main>
+    <footer>
+      
+      <img class="footer__wcci-logo" src="./images/wcciicon.png" alt="WCCI Logo">
+      <div class="footer__copyright">
+        <small>&copy;Brian Bross 2019</small>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>
