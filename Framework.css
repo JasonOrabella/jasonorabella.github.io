@@ -9,9 +9,9 @@
 html{
     --bodybackgroundcolor: #e0ebe8;
     --linkcolor: #9e133c;
-    --title: #fdba00;
-    --textcolor: rgb(202, 5, 71);
-    --headerbackgroundcolor: #49977f;
+    --title: #05ff26;
+    --textcolor: rgb(45, 49, 28);
+    --headerbackgroundcolor: #a6b88f;
     font: 20px/1 "Ubuntu", sans-serif;
 }
 body{
