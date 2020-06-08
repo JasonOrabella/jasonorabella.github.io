@@ -143,6 +143,8 @@ figcaption{
     text-decoration: underline;
 }
 .contact-me{
+    background-color: rgb(45, 49, 28, 0.13);
+    
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -152,7 +154,7 @@ figcaption{
     flex-direction: row;
 }
 .contact-me__list-item-image{
-    width: 2rem;
+    width: 5rem;
     margin: .25rem;
 }
 .button-container{
@@ -169,7 +171,7 @@ figcaption{
 }
 .footer__wcci-logo{
     justify-self: flex-start;
-    width: 2rem;
+    width: 5rem;
 }
 .footer__copyright{
     display: flex;
