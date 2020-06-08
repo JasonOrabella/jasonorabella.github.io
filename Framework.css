@@ -8,7 +8,7 @@
 /* General Page Formatting */
 html{
     --bodybackgroundcolor: #e0ebe8;
-    --linkcolor: #9e133c;
+    --linkcolor: #e00a4a;
     --title: #05ff26;
     --textcolor: rgb(45, 49, 28);
     --headerbackgroundcolor: #a6b88f;
@@ -42,6 +42,7 @@ a{
 }
 a:hover{
     color: var(--title);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 img{
     width: 100%;
@@ -49,6 +50,7 @@ img{
 h2{
     margin-bottom: 1rem;
     color: var(--textcolor);
+
 }
 ul{
     list-style: none;
