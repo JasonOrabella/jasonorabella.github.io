@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Ubuntu&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap")
 * {
   box-sizing: border-box;
   margin: 0;
@@ -8,11 +9,12 @@
 /* General Page Formatting */
 html {
   --bodybackgroundcolor: #e0ebe8;
-  --linkcolor: #e00a4a;
-  --title: #05ff26;
+  --linkcolor: #4e4931;
+  --title: #38aa48af;
   --textcolor: rgb(45, 49, 28);
   --headerbackgroundcolor: #a6b88f;
   font: 20px/1 "Ubuntu", sans-serif;
+  /* font:'Montserrat', sans-serif; */
 }
 body {
   background: rgb(73, 151, 127);
@@ -30,6 +32,7 @@ body {
   display: grid;
   grid-template-rows: 5rem auto 1.2rem;
   min-height: 100vh;
+  
 }
 
 /*Tag Formatting*/
@@ -49,6 +52,7 @@ a:hover {
 }
 img {
   width: 100%;
+
 }
 h2 {
   margin-bottom: 1rem;
@@ -117,6 +121,7 @@ figcaption {
   align-items: center;
   background-color: var(--headerbackgroundcolor);
   padding: 1rem 2rem;
+  border-radius: 20px;
 }
 .main-header__title {
   color: var(--title);
@@ -124,17 +129,22 @@ figcaption {
 }
 .navigation__list {
   display: flex;
-  border: 30px;
-  border-radius: 20px;
+  border: 20px; 
 }
+/* .navigation__list-item3{
+    display: flex;
+    
+} */
 
 .navigation__list a :hover {
   background-color: rgba(43, 41, 41, 0.733);
-  border-radius: 1em;
-  padding: 10px;
+  border-radius: 20px;
+  border-radius: 40px;
+  /* padding: 10px; */
 }
 .navigation__list-item {
   margin-right: 0.8rem;
+  
 }
 .navigation__list-item:last-child {
   margin-right: 0;
@@ -181,7 +191,7 @@ figcaption {
 }
 .footer__wcci-logo {
   justify-self: flex-start;
-  width: 5rem;
+  width: 200px;
 }
 .footer__copyright {
   display: flex;
