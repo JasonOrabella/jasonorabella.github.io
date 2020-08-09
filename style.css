@@ -1,3 +1,7 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
 .side-nav {
     height: 100%; /* Full-height: remove this if you want "auto" height */
     width: 11.25em; /* Set the width of the sidebar */
@@ -33,6 +37,10 @@
     align-items: center;
 }
 
+#fish_pic{
+    max-width: 20%; 
+}
+
   @media only screen and (max-width: 607px) {
       a{
         
@@ -58,6 +66,9 @@ display: grid;
 margin-top: 4em;
 
   }
+  #fish_pic{
+  padding-top: 4em;
+}
 
 
   }
