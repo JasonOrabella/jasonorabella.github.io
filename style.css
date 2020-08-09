@@ -48,8 +48,13 @@
 }
 
 #fish_pic {
-  max-width: 40%;
+  max-width: 25%;
   opacity: 75%;
+}
+
+.side-nav a img{
+  max-width: 110px;
+  opacity: 90%;
 }
 
 @media only screen and (max-width: 607px) {
@@ -88,5 +93,13 @@
   .side-nav :hover{
     background-color: var(--main-color-2);
     font-size-adjust: larger;
+  }
+  .side-nav a.mobile_hidden{
+    display:none;
+    border: none;
+  }
+  #github_logo,
+  #linkedin_logo{ 
+    display: none;
   }
 }
