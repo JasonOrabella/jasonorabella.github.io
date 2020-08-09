@@ -1,74 +1,92 @@
-*{
-    font-family: 'Montserrat', sans-serif;
+:root {
+  --main-color-1: #293321;
+  --main-color-2: #616a41;
+  --main-color-3: #7c4836;
+  --main-color-4: #cb8641;
+  --main-color-5: #e6b95f;
+}
+
+* {
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--main-color-1);
+  color:var(--main-color-5)
 }
 
 .side-nav {
-    height: 100%; /* Full-height: remove this if you want "auto" height */
-    width: 11.25em; /* Set the width of the sidebar */
-    position: fixed; 
-    z-index: 1; /* Stay on top */
-    top: 0; /* Stay at the top */
-    left: 0;
-    background-color: #111; /* Black */
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 20px;
-    padding-left: 8px;
-    padding-right: 8px;
-  }
-  .side-nav a {
-    margin-top: 1em;
-    padding: 1em;
-    text-align: center;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    /* background-color: green; */
-    border: 2px solid red;
-    border-radius: 5%;
-  }
-
-  .side-nav a:hover {
-    color: #f1f1f1;
-  }
-  .home_page-div{
-    display: grid;
-    justify-items: center;
-    align-items: center;
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 11.25em; /* Set the width of the sidebar */
+  position: fixed;
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: var(--main-color-2);
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.side-nav a {
+  margin-top: 1em;
+  padding: 1em;
+  text-align: center;
+  text-decoration: none;
+  font-size: 25px;
+  color:var(--main-color-4);
+  display: block;
+  background-color: var(--main-color-1);
+  border: 2px solid var(--main-color-3);
+  border-radius: 5%;
 }
 
-#fish_pic{
-    max-width: 20%; 
+.side-nav a:hover {
+  color: var(--main-color-5)
+}
+.home_page-div {
+  display: grid;
+  justify-items: center;
+  align-items: center;
 }
 
-  @media only screen and (max-width: 607px) {
-      a{
-        
-          font-size: smaller;
-      }
-    .side-nav {
-        width: unset;
-        height:auto;
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        display: flex;
+#fish_pic {
+  max-width: 40%;
+  opacity: 75%;
+}
+
+@media only screen and (max-width: 607px) {
+  a {
+    font-size: smaller;
+  }
+  .side-nav {
+    width: unset;
+    height: auto;
+    background-color: var(--main-color-1);
+    list-style-type: none;
+    width: 100%;
+    display: inline;
+    margin: 0;
+    padding: 0;
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-      background-color: lightblue;
-    }
-      .side-nav a{
-          padding:0
-    }
-    .home_page-div{
-display: grid;
-margin-top: 4em;
-
   }
-  #fish_pic{
-  padding-top: 4em;
+  .side-nav a {
+    justify-content: space-between;
+    padding: 2px;
+    font-size: 18px;
+    margin-right:2px;
+    margin-left:2px;
+    border-radius: 20%;
+  }
+  .home_page-div {
+    display: grid;
+    margin-top: 4em;
+  }
+  #fish_pic {
+    padding-top: 4em;
+  }
+  .side-nav :hover{
+    background-color: var(--main-color-2);
+    font-size-adjust: larger;
+  }
 }
-
-
-  }
