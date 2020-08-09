@@ -9,7 +9,15 @@
 * {
   font-family: "Montserrat", sans-serif;
   background-color: var(--main-color-1);
-  color:var(--main-color-5)
+  color:var(--main-color-4);
+}
+.myname_header{
+  font-family: 'Roboto Slab', serif;
+  color:var(--main-color-5);
+  padding:7px;
+  border-radius: 30%;
+  /* border:2px dashed var(--main-color-3);
+  background-color:var(--main-color-2); */
 }
 
 .side-nav {
@@ -24,37 +32,71 @@
   padding-top: 20px;
   padding-left: 8px;
   padding-right: 8px;
+
 }
 .side-nav a {
   margin-top: 1em;
-  padding: 1em;
+  padding: .5em;
   text-align: center;
   text-decoration: none;
   font-size: 25px;
   color:var(--main-color-4);
   display: block;
   background-color: var(--main-color-1);
+  
   border: 2px solid var(--main-color-3);
   border-radius: 5%;
 }
 
 .side-nav a:hover {
-  color: var(--main-color-5)
+  color: var(--main-color-5);
+  background-color: rgba(255, 255, 255, 0.1);
 }
+
 .home_page-div {
+  margin-top:4em;
+  padding-top: 4em;
   display: grid;
   justify-items: center;
   align-items: center;
+  /* border: 2px solid var(--main-color-3); */
+  /* background:
+  radial-gradient( var(--main-color-1), transparent),
+
+  radial-gradient(var(--main-color-5), transparent);  */
+
 }
 
 #fish_pic {
   max-width: 25%;
   opacity: 75%;
+  border-radius: 50%;
+  background-color: var(--main-color-5);
 }
 
 .side-nav a img{
-  max-width: 110px;
+  max-width: 100px;
   opacity: 90%;
+}
+.myname_header{
+  text-size-adjust: larger;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  bottom: 0;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  background-color: var(--main-color-2);
+}
+
+.footer p,a {
+  background-color: var(--main-color-2);
+  color: var(--main-color-5);
+  text-size-adjust: x-large;
 }
 
 @media only screen and (max-width: 607px) {
@@ -89,6 +131,7 @@
   }
   #fish_pic {
     padding-top: 4em;
+
   }
   .side-nav :hover{
     background-color: var(--main-color-2);
@@ -102,4 +145,15 @@
   #linkedin_logo{ 
     display: none;
   }
+  #fish_pic {
+    max-width: 60%;
+    opacity: 75%;
+    border-radius: 50%;
+}
+}
+@media only screen and (max-width: 300px) {
+  .side-nav a{
+    font-size: 12px;
+  }
+
 }
