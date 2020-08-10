@@ -1,12 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jason Orabella</title>
+        <link rel="stylesheet" href="../style.css">    
+        <!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet"> -->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    </head>
+    <body>
 
-    <title>Contact Jason</title>
-</head>
-<body>
+ <div class="side-nav">
+            <a href="./about-me.html">About Me</a>
+            <a href="./projects.html">Projects</a>
+            <a href="./resume.html">Resume </a>
+            <a href="./contact-me.html">Contact</a>
+            <a class = "mobile_hidden" href=""><img id=github_logo src="./images/github-logo1.png" alt=""></a>
+            <a class = "mobile_hidden" href=""><img id=linkedin_logo src="./images/linkedin-logo.png" alt=""></a>
+          </div> 
+
+   <div class = contact-me_div>
+    <form action= 'mailto:JasonOrabell@gmail.com' method="POST">
+        <input type="text" name="name" class="form__control" placeholder="Name..." required="">
+        <br>
+        <input type="email" name="email" class="form__control" placeholder="Email..." required="">
+        <br>
+        <textarea name="message" id="" cols="30" rows="10" class="form__control" placeholder="Message..." required=""></textarea>
+        <br>
+        <input type="submit" class="form__control submit" value="Send Message">
+    </form>
+</div>
     
 </body>
 </html>

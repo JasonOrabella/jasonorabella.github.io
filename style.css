@@ -7,12 +7,14 @@
   --main-color-5: #e6b95f;
 }
 
+
 * {
   font-family: "Montserrat", sans-serif;
   background-color: var(--main-color-1);
   color: var(--main-color-4);
   text-decoration: none;
   list-style: none;
+ 
 }
 .myname_header {
   /* font-family: 'Roboto Slab', serif; */
@@ -159,6 +161,29 @@ a {
 .project__img {
     width: 100%;
     margin-top: 15px
+}
+
+.contact-me_div{
+  margin-top:4em;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  border: solid var(--main-color-4);
+}
+.contact-me_div input,
+.contact-me_div textarea
+{
+  background-color:var(--main-color-2);
+  text:var(--main-color-5);
+  width: 100%;
+  margin-top:1em;
+  color: var(--main-color-5);
+}
+
+.contact-me_div input ::placeholder,
+.contact-me_div form ::placeholder,
+.contact-me_div textarea::placeholder{
+  color:white;
 }
 @media only screen and (max-width: 607px) {
   a {
