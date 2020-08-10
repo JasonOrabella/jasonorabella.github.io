@@ -1,5 +1,6 @@
 :root {
-  --main-color-1: #293321;
+  --main-color-1: #4e613f;
+  --main-color-6: #293321;
   --main-color-2: #616a41;
   --main-color-3: #7c4836;
   --main-color-4: #cb8641;
@@ -9,12 +10,15 @@
 * {
   font-family: "Montserrat", sans-serif;
   background-color: var(--main-color-1);
-  color:var(--main-color-4);
+  color: var(--main-color-4);
+  text-decoration: none;
+  list-style: none;
 }
-.myname_header{
-  font-family: 'Roboto Slab', serif;
-  color:var(--main-color-5);
-  padding:7px;
+.myname_header {
+  /* font-family: 'Roboto Slab', serif; */
+  font-family: "Libre Baskerville", serif;
+  color: var(--main-color-5);
+  padding: 7px;
   border-radius: 30%;
   /* border:2px dashed var(--main-color-3);
   background-color:var(--main-color-2); */
@@ -32,18 +36,17 @@
   padding-top: 20px;
   padding-left: 8px;
   padding-right: 8px;
-
 }
 .side-nav a {
   margin-top: 1em;
-  padding: .5em;
+  padding: 0.5em;
   text-align: center;
   text-decoration: none;
   font-size: 25px;
-  color:var(--main-color-4);
+  color: var(--main-color-4);
   display: block;
-  background-color: var(--main-color-1);
-  
+  background-color: var(--main-color-6);
+
   border: 2px solid var(--main-color-3);
   border-radius: 5%;
 }
@@ -54,7 +57,7 @@
 }
 
 .home_page-div {
-  margin-top:4em;
+  margin-top: 4em;
   padding-top: 4em;
   display: grid;
   justify-items: center;
@@ -64,7 +67,6 @@
   radial-gradient( var(--main-color-1), transparent),
 
   radial-gradient(var(--main-color-5), transparent);  */
-
 }
 
 #fish_pic {
@@ -74,11 +76,12 @@
   background-color: var(--main-color-5);
 }
 
-.side-nav a img{
+.side-nav a img {
   max-width: 100px;
   opacity: 90%;
+  background-color: var(--main-color-6);
 }
-.myname_header{
+.myname_header {
   text-size-adjust: larger;
 }
 
@@ -93,12 +96,70 @@
   background-color: var(--main-color-2);
 }
 
-.footer p,a {
+.footer p,
+a {
   background-color: var(--main-color-2);
   color: var(--main-color-5);
   text-size-adjust: x-large;
 }
 
+.personal-info__headshot {
+  max-width: 30%;
+  border-radius: 50%;
+  border: 2px solid var(--main-color-3);
+}
+.center {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+.center p {
+  display: flex;
+  padding-right: 5em;
+  padding-left: 15em;
+}
+.skills_ul {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding:4px;
+  margin-right: 4px;
+
+}
+.skills_ul li{
+  background-color: var(--main-color-2);
+  border:solid var(--main-color-3);
+  display: flex;
+  justify-items: start;
+  align-items: center;
+  padding:4px;
+  margin: auto;
+  margin:4px;
+  padding:15px;
+  margin-left:13em;
+  margin-right:4em;
+}
+.projects{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 70px;
+  margin-left:14em;
+  padding-left:50px;
+  padding-right:50px;
+}
+.projects div:nth-child(odd){
+  background-color:var(--main-color-2);
+  border: solid var(--main-color-5);
+}
+.projects div:nth-child(even){
+  border: solid var(--main-color-3);
+}
+
+.project__img {
+    width: 100%;
+    margin-top: 15px
+}
 @media only screen and (max-width: 607px) {
   a {
     font-size: smaller;
@@ -121,8 +182,8 @@
     justify-content: space-between;
     padding: 2px;
     font-size: 18px;
-    margin-right:2px;
-    margin-left:2px;
+    margin-right: 2px;
+    margin-left: 2px;
     border-radius: 20%;
   }
   .home_page-div {
@@ -131,29 +192,64 @@
   }
   #fish_pic {
     padding-top: 4em;
-
   }
-  .side-nav :hover{
+  .side-nav :hover {
     background-color: var(--main-color-2);
     font-size-adjust: larger;
   }
-  .side-nav a.mobile_hidden{
-    display:none;
+  .side-nav a.mobile_hidden {
+    display: none;
     border: none;
   }
   #github_logo,
-  #linkedin_logo{ 
+  #linkedin_logo {
     display: none;
   }
   #fish_pic {
     max-width: 60%;
     opacity: 75%;
     border-radius: 50%;
-}
+  }
+  .center {
+    padding: none;
+    margin: none;
+    margin-top: 4em;
+  }
+  .personal-info__headshot {
+    max-width: 40%;
+  }
+  .center p {
+    padding: 1em;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    text-size-adjust: larger;
+    border: 2px solid var(--main-color-5);
+  }
+  .skills_ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding:4px;
+    margin-right: 4px;
+  }
+  .skills_ul li{
+    background-color: var(--main-color-2);
+    border:solid var(--main-color-3);
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    padding:4px;
+    margin: auto;
+  }
+  .projects{
+    display: flex;
+    flex-direction: column;
+    margin:0;
+    margin-top: 4em;
+  }
 }
 @media only screen and (max-width: 300px) {
-  .side-nav a{
+  .side-nav a {
     font-size: 12px;
   }
-
 }
