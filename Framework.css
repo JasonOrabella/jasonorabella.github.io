@@ -1,3 +1,11 @@
+:root {
+  --main-color-1: #4e613f;
+  --main-color-6: #293321;
+  --main-color-2: #616a41;
+  --main-color-3: #7c4836;
+  --main-color-4: #cb8641;
+  --main-color-5: #e6b95f;
+}
 @import url("https://fonts.googleapis.com/css?family=Ubuntu&display=swap");
 * {
   box-sizing: border-box;
@@ -8,14 +16,14 @@
 /* General Page Formatting */
 html {
   --bodybackgroundcolor: #e0ebe8;
-  --linkcolor: #e00a4a;
-  --title: #05ff26;
-  --textcolor: rgb(45, 49, 28);
-  --headerbackgroundcolor: #a6b88f;
-  font: 20px/1 "Ubuntu", sans-serif;
+  --linkcolor:var(--main-color-4);
+  --title: var(--main-color-3);
+  --textcolor: var(--main-color-4);
+  --headerbackgroundcolor: var(--main-color-1);
+    font: 20px/1 "Ubuntu", sans-serif;
 }
 body {
-  background: rgb(73, 151, 127);
+  background: var(--main-color-6);
   background: radial-gradient(
     circle,
     rgba(73, 151, 127, 1) 0%,
