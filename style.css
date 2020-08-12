@@ -185,6 +185,7 @@ a {
 .contact-me_div textarea::placeholder{
   color:white;
 }
+
 @media only screen and (max-width: 607px) {
   a {
     font-size: smaller;
