@@ -1,17 +1,18 @@
 :root {
   --main-color-1: #4e613f;
-  --main-color-6: #293321;
   --main-color-2: #616a41;
   --main-color-3: #7c4836;
   --main-color-4: #cb8641;
   --main-color-5: #e6b95f;
+  --main-color-6: #293321;
+  --main-color-7: #b3beaa;
 }
 
 
 * {
   font-family: "Montserrat", sans-serif;
-  background-color: var(--main-color-1);
-  color: var(--main-color-4);
+  background-color: var(--main-color-7);
+  color: var(--main-color-6);
   text-decoration: none;
   list-style: none;
  
@@ -20,10 +21,11 @@
   /* font-family: 'Roboto Slab', serif; */
   font-family: "Libre Baskerville", serif;
   color: var(--main-color-5);
-  padding: 7px;
+  padding:.4em;
   border-radius: 30%;
-  /* border:2px dashed var(--main-color-3);
-  background-color:var(--main-color-2); */
+  text-size-adjust: larger;
+  border:2px dashed var(--main-color-3);
+  background-color:var(--main-color-2);
 }
 
 .side-nav {
@@ -64,7 +66,7 @@
   display: grid;
   justify-items: center;
   align-items: center;
-  /* border: 2px solid var(--main-color-3); */
+  /* border: 2px solid var(--main-color-1); */
   /* background:
   radial-gradient( var(--main-color-1), transparent),
 
@@ -83,9 +85,7 @@
   opacity: 90%;
   background-color: var(--main-color-6);
 }
-.myname_header {
-  text-size-adjust: larger;
-}
+
 
 .footer {
   position: fixed;
