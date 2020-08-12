@@ -1,13 +1,12 @@
-console.log("calling nav-bar js correctly")
+
 const renderNavBar =()=>{
-console.log("inside render nav");
 const mainBody = document.querySelector(".main_body");
 console.log (mainBody);
 const div = document.createElement("div");
 div.classList.add("side-nav");
 mainBody.appendChild(div);
-div.innerHTML =`
-<a href="./about-me.html">About Me</a>
+div.innerHTML =
+`<a href="./about-me.html">About Me</a>
 <a href="./projects.html">Projects</a>
 <a href="./resume.html">Resume </a>
 <a href="./contact-me.html">Contact</a>
