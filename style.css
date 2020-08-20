@@ -186,6 +186,12 @@ a {
   color:white;
 }
 
+.projects div{
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
 @media only screen and (max-width: 607px) {
   a {
     font-size: smaller;
