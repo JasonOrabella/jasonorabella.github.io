@@ -197,8 +197,8 @@ a {
     font-size: smaller;
   }
   .side-nav {
-    width: unset;
-    height: auto;
+    width: unset; 
+     height: auto; 
     background-color: var(--main-color-1);
     list-style-type: none;
     width: 100%;
@@ -283,5 +283,6 @@ a {
 @media only screen and (max-width: 300px) {
   .side-nav a {
     font-size: 12px;
+    font-size:12px;
   }
 }
