@@ -256,6 +256,7 @@ a {
     justify-items: center;
     align-items: center;
     text-size-adjust: larger;
+    border:2px solid var(--main-color-4);
     border: 2px solid var(--main-color-5);
   }
   .skills_ul {
