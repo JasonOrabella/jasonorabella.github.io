@@ -256,7 +256,6 @@ a {
     justify-items: center;
     align-items: center;
     text-size-adjust: larger;
-    border:2px solid var(--main-color-4);
     border: 2px solid var(--main-color-5);
   }
   .skills_ul {
@@ -281,9 +280,16 @@ a {
     margin-top: 4em;
   }
 }
+@media only screen and (max-width: 700px) {
+  .side-nav a {
+    font-size: 18px;
+    font-size:18px;
+  }
 @media only screen and (max-width: 300px) {
   .side-nav a {
     font-size: 12px;
     font-size:12px;
   }
+
+  
 }
