@@ -66,11 +66,6 @@
   display: grid;
   justify-items: center;
   align-items: center;
-  /* border: 2px solid var(--main-color-1); */
-  /* background:
-  radial-gradient( var(--main-color-1), transparent),
-
-  radial-gradient(var(--main-color-5), transparent);  */
 }
 
 #fish_pic {
