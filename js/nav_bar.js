@@ -1,6 +1,6 @@
 
 const renderNavBar =()=>{
-const mainBody = document.querySelector(".main_body");
+
 console.log (mainBody);
 const div = document.createElement("div");
 div.classList.add("side-nav");
